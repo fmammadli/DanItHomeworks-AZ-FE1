@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    widows: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: darkcyan;
+}
+li {
+    float: left;
+
+}
+
+.logo {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+nav li a {
+    display: inline-block;
+    color: white;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 140px;
+    padding-right: 40px;
+
+}
+span {
+    color: black;
+}
+h1 {
+    text-align: left;
+    color: lightskyblue;
+}
+aside {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+aside ul {
+
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 240px;
+    background-color: white;
+    border: 2px solid lightgray;
+}
+aside ul li a {
+    padding: 10px 20px;
+    width: 100%;
+    float: left;
+    color: gray;
+    transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+aside ul li a:hover {
+    background-color: lightgray;
+    padding-left: 40px;
+}
+li a.whyramda {
+    padding-left: 40px;
+    background-color: lightgray;
+    color: black;
+}
+.right-column {
+    margin: 20px 50px 20px 0;
+    width: 70%;
+    float: right;
+}
+img {
+
+    transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+p {
+    text-align: left;
+    float: right;
+}
+.active {
+    margin-left: 55px;
+    background-color: dimgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+footer {
+    display: inline-block;
+    width: 100%;
+}
+footer ul {
+    padding: 5px 20px;
+    color: #ffffff;
+    background-color: grey;
+}
+footer ul li {
+    padding: 20px 10px;
+}
+footer a {
+    color: black;
+    transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+footer a:hover {
+    color: rgb(28, 75, 116);
+    border-bottom: 1px solid rgb(28, 75, 116);
+}
+footer li:last-child a {
+    pointer-events: none;
+    position: absolute;
+    right: 30px;
+
+.f-active {
+    color: rgb(28, 75, 116);
+    border-bottom: 1px solid rgb(28, 75, 116);
+}
