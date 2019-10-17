@@ -99,6 +99,7 @@ body {
     display: block;
     margin: 0 auto;
     transition: all 0.75s;
+    width: 80%;
 }
 .section__content__image:hover img {
     transform: scale(1.1);
