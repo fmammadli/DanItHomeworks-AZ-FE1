@@ -1,0 +1,122 @@
+html, body {
+    font-family: 'Arimo', sans-serif;
+}
+.wrapper {
+    padding: 25px 17px 30px;
+    background-color: #3a4965;
+    display: block;
+    margin: 0 auto;
+}
+table {
+    border-collapse: collapse;
+}
+tbody tr td:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+tbody tr td:nth-child(even) {
+    background-color: #e3e3e3;
+}
+tr:nth-child(2) td:first-child{
+    background-color: #89c331;
+}
+tr:nth-child(3) td:first-child {
+    background-color: #f04a56;
+}
+tr:nth-child(4) td:first-child {
+    background-color: #20807c;
+}
+table td {
+    box-shadow: inset 0px -3px 5px -3px rgba(0, 0, 0, 0.27);
+}
+tr td {
+    width: 157px;
+    height: 166px;
+    color:  #484848;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+tr:first-child td {
+    width: 157px;
+    height: 112px;
+    color:  #484848;
+    font-size: 20px;
+    font-weight: 700;
+}
+tr:first-child td:first-child {
+    width: 198px;
+    height: 112px;
+    color:  #484848;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #fafafa;
+}
+tr:first-child td:first-child span {
+    color:  #484848;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+tr td:first-child {
+    width: 198px;
+    height: 166px;
+}
+.plan-name {
+    display: block;
+    color:  #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.price {
+    color:  #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.price sup {
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    vertical-align: super;
+    top: 0;
+}
+.time {
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.fas, .far {
+    font-size: 24px;
+    color: #848484;
+    display: block;
+    margin-bottom: 10px;
+}
+.btn {
+    border-radius: 5px;
+    background-color:  #484848;
+    width: 144px;
+    height: 34px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 auto;
+    box-shadow: 0 7px #404040;
+    box-sizing: border-box;
+}
+.btn:hover {
+    background-color: #444444;
+}
+.btn:active {
+    background-color: #444444;
+    box-shadow: 0 4px #383838;
+    transform: translateY(4px);
+}
