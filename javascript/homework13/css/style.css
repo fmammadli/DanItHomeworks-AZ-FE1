@@ -1,0 +1,154 @@
+.main {
+    width: 1280px;
+    font-family: sans-serif;
+}
+
+.logo-doc {
+    font-family: sans-serif;
+    margin: 0;
+    width: 1280px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1 {
+    text-align-last: left;
+    color: #4bcaff;
+}
+
+span {
+    color: black;
+}
+
+.all-slot div {
+    display: inline-block;
+    font-size: 24px;
+    color: rgb(221, 240, 50);
+}
+
+.all-slot {
+    text-align: center;
+    background-color: #35444f;
+}
+
+.first-slot {
+    padding: 30px 38px;
+}
+
+.second-slot {
+    padding: 30px 38px;
+}
+
+.third-slot {
+    padding: 30px 38px;
+}
+
+.four-slot {
+    padding: 30px 38px;
+}
+
+.all-slot div:hover {
+    background-color: #222f3a;
+}
+
+.non-lane {
+    text-decoration: none;
+}
+
+.left, .right {
+    display: inline-block;
+}
+
+.left {
+    border: 1px solid black;
+    font-size: 24px;
+    color: #495863;
+    width: 300px;
+    vertical-align: top;
+    margin: 60px 60px 60px 0px;
+}
+
+.right {
+    border: 1px solid black;
+    padding: 60px;
+    margin: 60px 0px 30px 0px;
+    width: 790px;
+}
+
+.left div {
+    padding: 30px;
+}
+
+.right img {
+    position: relative;
+    left: 230px;
+    overflow: hidden;
+}
+
+.e {
+    vertical-align: center;
+    margin-left: 25px;
+    padding: 0;
+    position: relative;
+    top: -20px;
+}
+
+.small-text {
+    padding-left: 380px;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+li {
+    display: inline;
+    padding: 15px 20px;
+    font-size: 24px;
+}
+
+ul {
+    background-color: #b4b7ba;
+    padding: 15px;
+}
+
+.float-right {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.left div:hover {
+    background-color: #dbdbdb;
+    color: black;
+}
+
+.left a {
+    color: #1a9af5;
+    text-decoration: none;
+}
+
+ul a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: #3181a6;
+    text-decoration: underline;
+}
+
+.float-right:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:hover {
+    -webkit-transition: all 1s ease-out;
+}
+
+img:hover {
+    -webkit-transform: scale(1.2);
+}
