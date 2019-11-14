@@ -1,36 +1,23 @@
-let tabs;
-let content;
-function ready () {
-    tabs = document.querySelectorAll('.tabs-title');
-    content = document.querySelectorAll('.tabs-cont');
-    hideTabsContent(1);
-};
-
-function hideTabsContent(a) {
-    for (let i = a; i < content.length; i++){
-        content[i].classList.remove('show');
-        content[i].classList.add('hide');
-        tabs[i].classList.remove('active')
-    }
-}
-
-document.getElementById('btns').onclick = function (event) {
-    let target = event.target;
-    for (let i = 0; i < tabs.length; i ++) {
-        if (target === tabs[i]) {
-            showTabsContent (i);
-            break;
-        }
-    }
-};
-function showTabsContent (b) {
-    if (content[b].classList.contains('hide')) {
-        hideTabsContent(0);
-        tabs[b].classList.add('active');
-        content[b].classList.remove('hide');
-        content[b].classList.add('show');
-    }
-}
+document.querySelector('.tabs-title').classList.add('active');
+ document.querySelector('.tabs-content-item').classList.add('active');
 
 
-document.addEventListener("DOMContentLoaded", ready);
+ let tabsTitle = document.querySelectorAll('.tabs-title'),
+     tabsContent = document.querySelectorAll('.tabs-content li');
+
+ tabsContent.forEach((e,index) => e.dataset.index = index);
+
+ for (let el of tabsTitle) {
+     el.addEventListener('click', e=>{
+         e.preventDefault();
+
+         document.querySelector('.tabs-title.active').classList.remove('active');
+         document.querySelector('.tabs-content-item.active').classList.remove('active');
+
+         el.classList.add('active');
+         const index = [...tabsTitle].indexOf(el);
+
+         const content = [...tabsContent].filter(el => el.getAttribute('data-index') == index);
+         content[0].classList.add('active');
+     })
+ }
