@@ -46,7 +46,6 @@ $(document).ready(function () {
         }
     )
 });
-// код для слайдера
 $(document).ready(function () {
     $('.slider-for').slick({
         slidesToShow: 1,
