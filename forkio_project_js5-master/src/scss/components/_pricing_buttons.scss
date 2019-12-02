@@ -1,0 +1,135 @@
+.pricing-category-tariff-students,
+.pricing-category-tariff-professional,
+.pricing-category-tariff-agency,
+.pricing-enterprise__header-enterprise {
+    @include tariff-block;
+    position: relative;
+
+    input {
+        @include main-button;
+    }
+}
+
+.pricing-category-tariff-professional {
+        h5  {
+        width:81%;
+        
+    }
+        input {
+        margin-top:35px;
+    }
+}
+.pricing-enterprise__header-enterprise {
+    input {
+        margin-top:35px;
+    }
+}
+
+.pricing-category-tariff-agency {
+    height: 560px;
+    width:290px;
+    background: rgba(65,51,68,0.3);
+
+    h3 {
+        background: rgba(58,45,61,0.4);
+        padding:41px;
+    }
+
+    h5  {
+        width:70%;
+        
+    }
+}
+
+@media #{$tablet} { 
+        
+    .pricing-category-tariff-students {
+        margin:30px 15px 0px;
+    }
+    
+    .pricing-category-tariff-professional {
+        margin:30px 15px 0px;
+        input {
+            margin-top:35px;
+        }
+    }
+
+    .pricing-category-tariff-agency {
+        margin:40px 15px 0px;
+
+        input {
+            margin-top:110px;
+        }
+    }
+
+    .pricing-enterprise__header-enterprise {
+        margin:40px 32px 0px 0px;
+    }
+}
+
+@media #{$lowDesktop} { 
+
+    .pricing-category-tariff-students,
+    .pricing-category-tariff-professional,
+    .pricing-enterprise__header-enterprise {
+        @include tariff-block($h3size:18px,$h4size:52px,$h5size:12px,$h4aftersize:10px,$blockW:210px,$mainMargin:10px 10px 0px);
+
+        input {
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .pricing-category-tariff-students {
+        input {
+            margin-top:54px;
+        }
+    }
+
+    .pricing-category-tariff-agency {
+        width: 242px;
+        margin:0px 10px;
+
+        input {
+            margin-top:80px;
+            width: 190px;
+            height: 52px;
+            
+            &:hover {
+                background: #c9c3c8;
+                color:#95868f;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media #{$highDesktop} { 
+
+    .pricing-category-tariff-students,
+    .pricing-category-tariff-professional,
+    .pricing-enterprise__header-enterprise {
+        @include tariff-block($h3size:24px,$h4size:60px,$blockW:260px,$mainMargin:0px 10px 0px);
+
+        &:nth-child(1) {
+            input {
+                margin-top:60px;
+            }
+        }
+    }
+
+    .pricing-category-tariff-agency {
+        @include tariff-block($h4size:82px,$blockW:290px,$blockH:560px,$mainMargin:0px 10px 0px);
+        background: rgba(65,51,68,0.3);
+
+        h3 {
+            background: rgba(58,45,61,0.4);
+            padding:41px;
+        }
+
+        input {
+            margin-top:80px;
+        }
+    }
+}

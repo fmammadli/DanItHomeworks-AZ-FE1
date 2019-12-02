@@ -1,0 +1,85 @@
+@mixin flex-row {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin tariff-block($h3size:24px,$h4size:60px,$h5size:16px,$h4aftersize:14px,$blockW:258px,$blockH:458px,$mainMargin:10px 0px 0px 0px) {
+    color:#fff;
+    width: $blockW;
+    height: $blockH;
+	background: rgba(95,81,97,0.4);
+    text-align: center;
+    margin:$mainMargin;
+
+	h3 {
+		text-transform: uppercase;
+		font-size: $h3size;
+		font-weight: 400;
+		background: rgba(104,91,106,0.5);
+		padding:39px 0px 29px;
+	}
+
+	h4 {
+		font-size: $h4size;
+		padding-top:23px;
+
+		&::after {
+			content:'per month';
+			color:#8c828e;
+			font-size: $h4aftersize;
+			display:block;
+			font-weight: 400;
+			padding-top:13px;
+			text-transform: uppercase;
+		}
+	}
+
+	h5 {
+		font-size: $h5size;
+		font-weight: 400;
+		line-height: 1.5;
+		padding:35px 20px 0px;
+		margin:0 auto;
+	
+		&::before {
+			content:"";
+			display:block;
+			width: 60px;
+			height: 5px;
+			background: #8d81ac;
+			margin:0 auto 26px;
+		}
+	}
+}
+
+@mixin main-button {
+	text-transform: uppercase;
+	margin-top:60px;
+	font-size: 15px;
+	width: 161px;
+	height: 46px;
+	color:#fff;	
+	background: rgba(120,107,121,0.7);
+	border-radius: 20px;
+
+	&:hover {
+		background: #c9c3c8;
+		color:#95868f;
+		cursor:pointer;
+	}
+}
+
+@mixin max-width($width) { 
+	@media (max-width: $width) {
+	  @content;
+	}
+  }
+  
